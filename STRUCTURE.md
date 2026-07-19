@@ -1,3 +1,4 @@
+```
 geneatlas/
 ├── README.md                  # Main project documentation (detailed)
 ├── LICENSE                    # Open source license (e.g., MIT or AGPL)
@@ -32,3 +33,4 @@ geneatlas/
 └── .github/
     ├── workflows/             # CI/CD pipelines
     └── ISSUE_TEMPLATE/
+```
