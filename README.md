@@ -1,9 +1,23 @@
 # GeneAtlas
-https://90thetecafe.github.io/GeneAtlas/
+https://90thetecafe.github.io/GeneAtlas/screenshots.html
 
 # Description
 
 > A research platform for synthetic genomic datasets, AI analysis, family relationship algorithms, phenotype prediction research, and privacy-preserving genomic computing.
+
+## 📱 Application Screenshots
+
+| Homepage | Requests |
+|:---:|:---:|
+| <img src="images/homepage.jpg" width="100%"> | <img src="images/request.png" width="100%"> |
+
+| Settings | User Information |
+|:---:|:---:|
+| <img src="images/settings.png" width="100%"> | <img src="images/userinfo.png" width="100%"> |
+
+| Family Tree | Features |
+|:---:|:---:|
+| <img src="images/familytree.png" width="100%"> | <img src="images/features.png" width="100%"> |
 
 ### **Executive Summary**
 
