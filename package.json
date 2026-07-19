@@ -1,0 +1,36 @@
+{
+  "name": "geneatlas",
+  "version": "1.0.0",
+  "description": "GeneAtlas — Global DNA Intelligence Platform",
+  "author": "GeneAtlas Initiative",
+  "license": "MIT",
+  "homepage": "https://github.com/yourusername/geneatlas",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/geneatlas.git"
+  },
+  "scripts": {
+    "dev": "live-server --open index.html",
+    "build": "tailwindcss -i ./src/styles/input.css -o ./dist/output.css --minify",
+    "watch": "tailwindcss -i ./src/styles/input.css -o ./dist/output.css --watch",
+    "deploy": "gh-pages -d ."
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.0",
+    "live-server": "^1.2.2",
+    "gh-pages": "^6.1.1"
+  },
+  "keywords": [
+    "dna",
+    "genomics",
+    "bioinformatics",
+    "ai",
+    "healthcare",
+    "geneatlas",
+    "genetic-engineering",
+    "precision-medicine"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
