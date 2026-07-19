@@ -1,0 +1,52 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="dnaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#22d3ee"/>
+      <stop offset="100%" stop-color="#67e8f9"/>
+    </linearGradient>
+    <linearGradient id="glowGrad" x1="30%" y1="20%" x2="80%" y2="90%">
+      <stop offset="0%" stop-color="#67e8f9" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Background Circle -->
+  <circle cx="256" cy="256" r="240" fill="#0f172a" stroke="#22d3ee" stroke-width="16"/>
+  
+  <!-- DNA Helix -->
+  <g transform="translate(156 156) scale(1.2)">
+    <!-- Left Strand -->
+    <path d="M80 40 Q120 10 160 55 Q200 100 200 140" 
+          fill="none" 
+          stroke="#67e8f9" 
+          stroke-width="28" 
+          stroke-linecap="round"/>
+    
+    <!-- Right Strand -->
+    <path d="M120 40 Q160 10 200 55 Q240 100 240 140" 
+          fill="none" 
+          stroke="#22d3ee" 
+          stroke-width="28" 
+          stroke-linecap="round"/>
+    
+    <!-- Cross connections -->
+    <line x1="100" y1="55" x2="160" y2="90" stroke="#67e8f9" stroke-width="12" stroke-linecap="round"/>
+    <line x1="120" y1="75" x2="180" y2="110" stroke="#67e8f9" stroke-width="12" stroke-linecap="round"/>
+    <line x1="110" y1="95" x2="170" y2="130" stroke="#67e8f9" stroke-width="12" stroke-linecap="round"/>
+  </g>
+
+  <!-- Center Glow -->
+  <circle cx="256" cy="256" r="85" fill="url(#glowGrad)" opacity="0.6"/>
+  
+  <!-- DNA Letter -->
+  <text x="256" y="285" 
+        text-anchor="middle" 
+        font-family="Arial Black, sans-serif" 
+        font-size="180" 
+        font-weight="900" 
+        fill="#0f172a" 
+        opacity="0.95">G</text>
+
+  <!-- Outer Ring -->
+  <circle cx="256" cy="256" r="220" fill="none" stroke="#22d3ee" stroke-width="18" stroke-dasharray="12 28"/>
+</svg>
