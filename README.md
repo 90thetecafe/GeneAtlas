@@ -9,11 +9,11 @@ https://90thetecafe.github.io/GeneAtlas/screenshots.html
 
 | Homepage | Requests | Settings | Family Tree |
 |:---:|:---:|:---:|:---:|
-| <img src="images/homepage.jpg" width="200"> | <img src="images/request.png" width="200"> | <img src="images/settings.png" width="200"> | <img src="images/familytree.png" width="400"> |
+| <img src="images/homepage.jpg" height="600"> | <img src="images/request.png" height="600"> | <img src="images/settings.png" height="600"> | <img src="images/familytree.png" height="600"> |
 
 | User Information | Features |
 |:---:|:---:|
-| <img src="images/userinfo.png" width="300"> | <img src="images/features.png" width="300"> |
+| <img src="images/userinfo.png" height="700"> | <img src="images/features.png" height="700"> |
 
 ### **Executive Summary**
 
