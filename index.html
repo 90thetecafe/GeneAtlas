@@ -127,22 +127,93 @@
 
             <!-- DNA VISUAL -->
             <div class="relative flex justify-center">
-                <svg width="520" height="520" viewBox="0 0 520 520" class="dna-helix">
-                    <defs>
-                        <linearGradient id="dnaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                            <stop offset="0%" stop-color="#22d3ee"/>
-                            <stop offset="100%" stop-color="#67e8f9"/>
-                        </linearGradient>
-                    </defs>
-                    <!-- Animated DNA Strands -->
-                    <g opacity="0.9">
-                        <path d="M100 100 Q200 50 300 150 Q400 250 420 100" fill="none" stroke="url(#dnaGrad)" stroke-width="28" stroke-linecap="round"/>
-                        <path d="M120 140 Q220 90 320 190 Q420 290 400 140" fill="none" stroke="#0e7490" stroke-width="18" stroke-linecap="round" opacity="0.6"/>
-                    </g>
-                    <circle cx="260" cy="260" r="140" fill="none" stroke="#22d3ee" stroke-width="4" stroke-dasharray="12 18"/>
-                    <text x="260" y="275" text-anchor="middle" fill="#22d3ee" font-size="92" font-weight="700" opacity="0.15">G</text>
-                    <text x="260" y="275" text-anchor="middle" fill="#22d3ee" font-size="92" font-weight="700" opacity="0.15">A</text>
-                </svg>
+               <svg width="520" height="520" viewBox="0 0 520 520" class="dna-helix"
+                    xmlns="http://www.w3.org/2000/svg">
+               
+                   <defs>
+                       <linearGradient id="dnaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                           <stop offset="0%" stop-color="#22d3ee"/>
+                           <stop offset="100%" stop-color="#67e8f9"/>
+                       </linearGradient>
+               
+                       <filter id="dnaGlow">
+                           <feGaussianBlur stdDeviation="5" result="blur"/>
+                           <feMerge>
+                               <feMergeNode in="blur"/>
+                               <feMergeNode in="SourceGraphic"/>
+                           </feMerge>
+                       </filter>
+                   </defs>
+               
+                   <!-- DNA Helix -->
+                   <g opacity="0.95" filter="url(#dnaGlow)">
+               
+                       <!-- Left Strand -->
+                       <path
+                           d="M150 100
+                              C250 130 250 190 150 220
+                              C50 250 50 310 150 340
+                              C250 370 250 430 150 460"
+                           fill="none"
+                           stroke="url(#dnaGrad)"
+                           stroke-width="18"
+                           stroke-linecap="round"
+                       />
+               
+                       <!-- Right Strand -->
+                       <path
+                           d="M370 100
+                              C270 130 270 190 370 220
+                              C470 250 470 310 370 340
+                              C270 370 270 430 370 460"
+                           fill="none"
+                           stroke="url(#dnaGrad)"
+                           stroke-width="18"
+                           stroke-linecap="round"
+                       />
+               
+                       <!-- Base Pairs -->
+                       <g stroke="#67e8f9" stroke-width="10" stroke-linecap="round">
+               
+                           <line x1="165" y1="108" x2="355" y2="108"/>
+                           <line x1="205" y1="155" x2="315" y2="155"/>
+                           <line x1="235" y1="205" x2="285" y2="205"/>
+               
+                           <line x1="150" y1="260" x2="370" y2="260"/>
+               
+                           <line x1="235" y1="315" x2="285" y2="315"/>
+                           <line x1="205" y1="365" x2="315" y2="365"/>
+                           <line x1="165" y1="412" x2="355" y2="412"/>
+               
+                       </g>
+                   </g>
+               
+                   <!-- Outer Ring -->
+                   <circle
+                       cx="260"
+                       cy="260"
+                       r="180"
+                       fill="none"
+                       stroke="#22d3ee"
+                       stroke-width="4"
+                       stroke-dasharray="12 18"
+                       opacity="0.8"
+                   />
+               
+                   <!-- Center Letter -->
+                   <text
+                       x="260"
+                       y="290"
+                       text-anchor="middle"
+                       fill="#22d3ee"
+                       font-family="Arial, sans-serif"
+                       font-size="92"
+                       font-weight="700"
+                       opacity="0.15">
+                       G
+                   </text>
+               
+               </svg>
                 
                 <div class="absolute inset-0 flex items-center justify-center">
                     <div class="text-center">
