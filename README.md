@@ -7,13 +7,13 @@ https://90thetecafe.github.io/GeneAtlas/screenshots.html
 
 ## 📱 Application Screenshots
 
-| Homepage | Requests | Settings | User Information |
+| Homepage | Requests | Settings | Family Tree |
 |:---:|:---:|:---:|:---:|
-| <img src="images/homepage.jpg" width="200"> | <img src="images/request.png" width="200"> | <img src="images/settings.png" width="200"> | <img src="images/userinfo.png" width="400"> |
+| <img src="images/homepage.jpg" width="200"> | <img src="images/request.png" width="200"> | <img src="images/settings.png" width="200"> | <img src="images/familytree.png" width="400"> |
 
-| Family Tree | Features |
+| User Information | Features |
 |:---:|:---:|
-| <img src="images/familytree.png" width="300"> | <img src="images/features.png" width="300"> |
+| <img src="images/userinfo.png" width="300"> | <img src="images/features.png" width="300"> |
 
 ### **Executive Summary**
 
