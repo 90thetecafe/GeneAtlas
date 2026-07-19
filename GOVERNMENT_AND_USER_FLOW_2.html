@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeneAtlas — Government & User System Flow</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap');
+        
+        body { font-family: 'Inter', system_ui, sans-serif; }
+        .title-font { font-family: 'Space Grotesk', sans-serif; }
+        
+        .glow-cyan { text-shadow: 0 0 25px rgb(34 211 238); }
+        .card-hover { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
+        .card-hover:hover { transform: translateY(-10px); box-shadow: 0 30px 60px -15px rgb(34 211 238 / 0.3); }
+        
+        .step-number {
+            background: linear-gradient(135deg, #22d3ee, #67e8f9);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-200 overflow-x-hidden">
+
+    <div class="max-w-6xl mx-auto px-6 py-16">
+        
+        <!-- Header -->
+        <div class="flex justify-between items-center mb-16">
+            <div class="flex items-center gap-4">
+                <div class="w-12 h-12 bg-gradient-to-br from-cyan-400 to-blue-500 rounded-2xl flex items-center justify-center text-3xl">🧬</div>
+                <div>
+                    <h1 class="title-font text-4xl font-bold tracking-tight">GeneAtlas</h1>
+                    <p class="text-cyan-400 font-medium">Secure Genomic Intelligence System</p>
+                </div>
+            </div>
+            <div class="text-sm text-slate-400">National DNA Platform Flow</div>
+        </div>
+
+        <h2 class="title-font text-6xl font-bold text-center mb-20 glow-cyan">
+            From Birth to Insight
+        </h2>
+
+        <!-- Government Section -->
+        <div class="bg-slate-900/70 border border-cyan-500/30 rounded-3xl p-12 mb-20">
+            <div class="flex items-center gap-4 mb-10">
+                <span class="text-5xl">🏛️</span>
+                <h2 class="title-font text-4xl font-semibold">Government Registration Process</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="card-hover bg-slate-800 rounded-2xl p-8 text-center">
+                    <div class="step-number text-6xl font-bold mb-4">01</div>
+                    <h3 class="font-semibold text-xl mb-3">ID Card / Birth</h3>
+                    <p class="text-slate-400">At birth or during national ID issuance</p>
+                </div>
+                <div class="card-hover bg-slate-800 rounded-2xl p-8 text-center">
+                    <div class="step-number text-6xl font-bold mb-4">02</div>
+                    <h3 class="font-semibold text-xl mb-3">Blood Sample</h3>
+                    <p class="text-slate-400">Secure biological sample collection</p>
+                </div>
+                <div class="card-hover bg-slate-800 rounded-2xl p-8 text-center">
+                    <div class="step-number text-6xl font-bold mb-4">03</div>
+                    <h3 class="font-semibold text-xl mb-3">Full DNA Sequencing</h3>
+                    <p class="text-slate-400">Whole genome extraction and analysis</p>
+                </div>
+                <div class="card-hover bg-slate-800 rounded-2xl p-8 text-center">
+                    <div class="step-number text-6xl font-bold mb-4">04</div>
+                    <h3 class="font-semibold text-xl mb-3">Secure Storage</h3>
+                    <p class="text-slate-400">Encrypted national BioVault</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- User App Section -->
+        <div class="bg-slate-900/70 border border-cyan-500/30 rounded-3xl p-12">
+            <div class="flex items-center gap-4 mb-12">
+                <span class="text-5xl">📱</span>
+                <h2 class="title-font text-4xl font-semibold">User Mobile Application Experience</h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-10">
+                <!-- Left Column -->
+                <div class="space-y-10">
+                    <div class="card-hover bg-slate-800 rounded-3xl p-8">
+                        <h3 class="text-2xl font-medium mb-4 flex items-center gap-3"><span class="text-cyan-400">1.</span> Full DNA Code</h3>
+                        <p class="text-slate-400">Access and explore your complete genomic sequence with interactive visualizations.</p>
+                    </div>
+                    <div class="card-hover bg-slate-800 rounded-3xl p-8">
+                        <h3 class="text-2xl font-medium mb-4 flex items-center gap-3"><span class="text-cyan-400">2.</span> DNA Illness Profile</h3>
+                        <p class="text-slate-400">Detailed genetic risk assessment and preventive health recommendations.</p>
+                    </div>
+                    <div class="card-hover bg-slate-800 rounded-3xl p-8">
+                        <h3 class="text-2xl font-medium mb-4 flex items-center gap-3"><span class="text-cyan-400">3.</span> Biological Family</h3>
+                        <p class="text-slate-400">AI-detected parents, siblings, children and extended family network.</p>
+                    </div>
+                    <div class="card-hover bg-slate-800 rounded-3xl p-8">
+                        <h3 class="text-2xl font-medium mb-4 flex items-center gap-3"><span class="text-cyan-400">4.</span> Living Family Tree</h3>
+                        <p class="text-slate-400">Beautiful interactive 3D family tree with genetic relationship strength.</p>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="space-y-10">
+                    <div class="card-hover bg-slate-800 rounded-3xl p-8">
+                        <h3 class="text-2xl font-medium mb-4 flex items-center gap-3"><span class="text-cyan-400">5.</span> Phenotypic Visualization</h3>
+                        <p class="text-slate-400">AI-powered 3D reconstruction of your face and body based on DNA.</p>
+                    </div>
+                    <div class="card-hover bg-slate-800 rounded-3xl p-8">
+                        <h3 class="text-2xl font-medium mb-4 flex items-center gap-3"><span class="text-cyan-400">6.</span> Genetic Traits &amp; Potential</h3>
+                        <p class="text-slate-400">Insights on IQ, talents, athletic ability, cognitive strengths, and personality tendencies.</p>
+                    </div>
+                    <div class="card-hover bg-slate-800 rounded-3xl p-8">
+                        <h3 class="text-2xl font-medium mb-4 flex items-center gap-3"><span class="text-cyan-400">7.</span> Celebrity DNA Match</h3>
+                        <p class="text-slate-400">Discover genetic similarities with notable individuals throughout history.</p>
+                    </div>
+                    <div class="card-hover bg-gradient-to-br from-cyan-900/50 to-slate-800 rounded-3xl p-8 border border-cyan-400/30">
+                        <h3 class="text-2xl font-medium mb-4 flex items-center gap-3"><span class="text-cyan-400">8.</span> Partner Compatibility</h3>
+                        <p class="text-slate-300">Send secure request → Partner accepts → AI predicts baby's genetic possibilities, health risks, IQ potential, talents, and more.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center mt-16 text-slate-500">
+            <p class="text-sm">Secure • Ethical • Citizen-First Design</p>
+        </div>
+    </div>
+
+</body>
+</html>
