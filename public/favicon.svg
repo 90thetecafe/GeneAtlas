@@ -1,52 +1,105 @@
 <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="dnaGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#22d3ee"/>
-      <stop offset="100%" stop-color="#67e8f9"/>
+    <linearGradient id="dnaGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#67e8f9"/>
+      <stop offset="100%" stop-color="#22d3ee"/>
     </linearGradient>
-    <linearGradient id="glowGrad" x1="30%" y1="20%" x2="80%" y2="90%">
-      <stop offset="0%" stop-color="#67e8f9" stop-opacity="0.9"/>
-      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0.6"/>
-    </linearGradient>
+
+    <radialGradient id="glowGrad">
+      <stop offset="0%" stop-color="#67e8f9" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#22d3ee" stop-opacity="0"/>
+    </radialGradient>
   </defs>
-  
-  <!-- Background Circle -->
-  <circle cx="256" cy="256" r="240" fill="#0f172a" stroke="#22d3ee" stroke-width="16"/>
-  
-  <!-- DNA Helix -->
-  <g transform="translate(156 156) scale(1.2)">
-    <!-- Left Strand -->
-    <path d="M80 40 Q120 10 160 55 Q200 100 200 140" 
-          fill="none" 
-          stroke="#67e8f9" 
-          stroke-width="28" 
-          stroke-linecap="round"/>
-    
-    <!-- Right Strand -->
-    <path d="M120 40 Q160 10 200 55 Q240 100 240 140" 
-          fill="none" 
-          stroke="#22d3ee" 
-          stroke-width="28" 
-          stroke-linecap="round"/>
-    
-    <!-- Cross connections -->
-    <line x1="100" y1="55" x2="160" y2="90" stroke="#67e8f9" stroke-width="12" stroke-linecap="round"/>
-    <line x1="120" y1="75" x2="180" y2="110" stroke="#67e8f9" stroke-width="12" stroke-linecap="round"/>
-    <line x1="110" y1="95" x2="170" y2="130" stroke="#67e8f9" stroke-width="12" stroke-linecap="round"/>
-  </g>
+
+  <!-- Background -->
+  <circle
+    cx="256"
+    cy="256"
+    r="240"
+    fill="#0f172a"
+    stroke="#22d3ee"
+    stroke-width="16"
+  />
 
   <!-- Center Glow -->
-  <circle cx="256" cy="256" r="85" fill="url(#glowGrad)" opacity="0.6"/>
-  
-  <!-- DNA Letter -->
-  <text x="256" y="285" 
-        text-anchor="middle" 
-        font-family="Arial Black, sans-serif" 
-        font-size="180" 
-        font-weight="900" 
-        fill="#0f172a" 
-        opacity="0.95">G</text>
+  <circle
+    cx="256"
+    cy="256"
+    r="150"
+    fill="url(#glowGrad)"
+  />
+
+  <!-- DNA Helix -->
+  <g
+    transform="translate(156 126)"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  >
+    <!-- Left strand -->
+    <path
+      d="M70 20
+         C150 55 150 105 70 140
+         C-10 175 -10 225 70 260"
+      stroke="url(#dnaGrad)"
+      stroke-width="18"
+      fill="none"
+    />
+
+    <!-- Right strand -->
+    <path
+      d="M170 20
+         C90 55 90 105 170 140
+         C250 175 250 225 170 260"
+      stroke="url(#dnaGrad)"
+      stroke-width="18"
+      fill="none"
+    />
+
+    <!-- Base pairs -->
+    <line x1="82" y1="28" x2="158" y2="28"
+          stroke="#67e8f9" stroke-width="10"/>
+
+    <line x1="105" y1="68" x2="135" y2="68"
+          stroke="#22d3ee" stroke-width="10"/>
+
+    <line x1="128" y1="108" x2="112" y2="108"
+          stroke="#67e8f9" stroke-width="10"/>
+
+    <line x1="150" y1="148" x2="90" y2="148"
+          stroke="#22d3ee" stroke-width="10"/>
+
+    <line x1="128" y1="188" x2="112" y2="188"
+          stroke="#67e8f9" stroke-width="10"/>
+
+    <line x1="105" y1="228" x2="135" y2="228"
+          stroke="#22d3ee" stroke-width="10"/>
+
+    <line x1="82" y1="260" x2="158" y2="260"
+          stroke="#67e8f9" stroke-width="10"/>
+  </g>
+
+  <!-- G Letter -->
+  <text
+    x="256"
+    y="315"
+    text-anchor="middle"
+    font-family="Arial Black, Arial, sans-serif"
+    font-size="170"
+    font-weight="900"
+    fill="#0f172a"
+    opacity="0.92"
+  >
+    G
+  </text>
 
   <!-- Outer Ring -->
-  <circle cx="256" cy="256" r="220" fill="none" stroke="#22d3ee" stroke-width="18" stroke-dasharray="12 28"/>
+  <circle
+    cx="256"
+    cy="256"
+    r="220"
+    fill="none"
+    stroke="#22d3ee"
+    stroke-width="12"
+    stroke-dasharray="12 28"
+  />
 </svg>
