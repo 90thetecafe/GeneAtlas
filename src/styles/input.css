@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ====================== 
+   GeneAtlas Custom Styles 
+   ====================== */
+
+@layer base {
+  body {
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3 {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+}
+
+@layer components {
+  .hero-glow {
+    text-shadow: 
+      0 0 20px rgb(103 232 249),
+      0 0 40px rgb(34 211 238);
+  }
+
+  .card-hover {
+    transition: all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+  }
+  
+  .card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 30px 60px -15px rgb(34 211 238 / 0.3);
+  }
+
+  .dna-text {
+    background: linear-gradient(90deg, #22d3ee, #67e8f9, #22d3ee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 8s linear infinite;
+  }
+
+  @keyframes shine {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 200% 50%; }
+  }
+}
+
+/* Subtle grid background for hero */
+.hero-bg {
+  background-image: 
+    linear-gradient(to right, rgba(34, 211, 238, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(34, 211, 238, 0.08) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* Animated DNA line */
+.dna-line {
+  stroke-dasharray: 20 15;
+  animation: dash 4s linear infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: -70;
+  }
+}
