@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeneAtlas — Complete System Flow</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap');
+        body { font-family: 'Inter', system_ui, sans-serif; }
+        .title-font { font-family: 'Space Grotesk', sans-serif; }
+        .section { scroll-margin-top: 80px; }
+        .glow { text-shadow: 0 0 30px rgb(34 211 238); }
+        .panel { transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1); }
+        .panel:hover { transform: translateY(-8px); }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-200">
+
+    <!-- NAV -->
+    <nav class="fixed top-0 w-full bg-slate-950/90 backdrop-blur-lg border-b border-cyan-400/20 z-50">
+        <div class="max-w-7xl mx-auto px-8 py-5 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <span class="text-3xl">🧬</span>
+                <span class="title-font text-3xl font-bold">GeneAtlas</span>
+            </div>
+            <div class="flex gap-8 text-sm">
+                <a href="#gov" class="hover:text-cyan-400">Government Flow</a>
+                <a href="#user" class="hover:text-cyan-400">User Experience</a>
+                <a href="#features" class="hover:text-cyan-400">Key Features</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="pt-24 max-w-7xl mx-auto px-8">
+
+        <!-- HERO -->
+        <section class="min-h-screen flex items-center">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h1 class="title-font text-7xl font-bold leading-tight glow">From Birth<br>to Insight</h1>
+                    <p class="text-2xl text-slate-400 mt-6">Secure National DNA System</p>
+                    <div class="mt-10 flex gap-4">
+                        <a href="#gov" class="px-8 py-4 bg-cyan-400 text-slate-950 font-semibold rounded-2xl">Government Process</a>
+                        <a href="#user" class="px-8 py-4 border border-white/30 rounded-2xl hover:bg-white/5">User App Experience</a>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <svg width="400" height="400" viewBox="0 0 400 400" class="animate-spin-slow">
+                        <defs>
+                            <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#22d3ee"/>
+                                <stop offset="100%" stop-color="#67e8f9"/>
+                            </linearGradient>
+                        </defs>
+                        <circle cx="200" cy="200" r="140" fill="none" stroke="url(#grad)" stroke-width="30" stroke-dasharray="20 30"/>
+                        <text x="200" y="215" text-anchor="middle" font-size="140" fill="#22d3ee" opacity="0.15">DNA</text>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- GOVERNMENT SECTION -->
+        <section id="gov" class="section py-24 border-t border-slate-700">
+            <h2 class="title-font text-5xl font-bold mb-12 text-center">1. Government DNA Registration</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="panel bg-slate-900 rounded-3xl p-10">
+                    <div class="text-6xl mb-6">👶</div>
+                    <h3 class="text-2xl font-semibold mb-4">At Birth</h3>
+                    <p class="text-slate-400">Blood sample collected → Full genome sequenced → Stored in secure BioVault with national ID.</p>
+                </div>
+                <div class="panel bg-slate-900 rounded-3xl p-10">
+                    <div class="text-6xl mb-6">🆔</div>
+                    <h3 class="text-2xl font-semibold mb-4">National ID Issuance</h3>
+                    <p class="text-slate-400">DNA profile linked permanently to citizen's identity.</p>
+                </div>
+                <div class="panel bg-slate-900 rounded-3xl p-10">
+                    <div class="text-6xl mb-6">🔒</div>
+                    <h3 class="text-2xl font-semibold mb-4">Secure Storage</h3>
+                    <p class="text-slate-400">Military-grade encryption + blockchain audit trail.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- USER APP SECTION -->
+        <section id="user" class="section py-24 bg-slate-900 rounded-3xl">
+            <h2 class="title-font text-5xl font-bold mb-16 text-center">2. Citizen Mobile Application</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="space-y-8">
+                    <div class="panel bg-slate-800 p-8 rounded-3xl">
+                        <h3 class="text-cyan-400 text-xl mb-2">1. Full DNA Sequence</h3>
+                        <p>Raw genomic data with interactive browser</p>
+                    </div>
+                    <div class="panel bg-slate-800 p-8 rounded-3xl">
+                        <h3 class="text-cyan-400 text-xl mb-2">2. Health & Illness Profile</h3>
+                        <p>Detailed genetic risk analysis</p>
+                    </div>
+                    <div class="panel bg-slate-800 p-8 rounded-3xl">
+                        <h3 class="text-cyan-400 text-xl mb-2">3. Biological Family Network</h3>
+                        <p>AI-matched relatives</p>
+                    </div>
+                    <div class="panel bg-slate-800 p-8 rounded-3xl">
+                        <h3 class="text-cyan-400 text-xl mb-2">4. Dynamic Family Tree</h3>
+                        <p>Interactive 3D visualization</p>
+                    </div>
+                </div>
+
+                <div class="space-y-8">
+                    <div class="panel bg-slate-800 p-8 rounded-3xl">
+                        <h3 class="text-cyan-400 text-xl mb-2">5. Phenotypic Reconstruction</h3>
+                        <p>AI-generated 3D face & body model</p>
+                    </div>
+                    <div class="panel bg-slate-800 p-8 rounded-3xl">
+                        <h3 class="text-cyan-400 text-xl mb-2">6. Genetic Traits</h3>
+                        <p>IQ • Talents • Athletic potential • Cognitive profile</p>
+                    </div>
+                    <div class="panel bg-slate-800 p-8 rounded-3xl">
+                        <h3 class="text-cyan-400 text-xl mb-2">7. Celebrity DNA Match</h3>
+                        <p>Genetic similarity score with notable people</p>
+                    </div>
+                    <div class="panel bg-gradient-to-br from-cyan-500/10 to-transparent border border-cyan-400/30 p-8 rounded-3xl">
+                        <h3 class="text-cyan-400 text-xl mb-2">8. Partner Baby Predictor</h3>
+                        <p>Send request → Mutual consent → AI calculates baby's possible traits, health, IQ potential, talents, etc.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TABLE SECTION -->
+        <section class="section py-24">
+            <h2 class="title-font text-4xl font-bold mb-10 text-center">Feature Comparison</h2>
+            <table class="w-full border-collapse">
+                <thead>
+                    <tr class="border-b border-slate-700">
+                        <th class="text-left py-6 px-6">Feature</th>
+                        <th class="text-center py-6 px-6">Government Role</th>
+                        <th class="text-center py-6 px-6">User Access</th>
+                    </tr>
+                </thead>
+                <tbody class="text-slate-300">
+                    <tr class="border-b border-slate-700"><td class="py-6 px-6">Full DNA Storage</td><td class="text-center text-emerald-400">✓ Registers</td><td class="text-center">View & Download</td></tr>
+                    <tr class="border-b border-slate-700"><td class="py-6 px-6">Disease Risk</td><td class="text-center text-emerald-400">✓ Stores</td><td class="text-center">Full Report</td></tr>
+                    <tr class="border-b border-slate-700"><td class="py-6 px-6">Family Matching</td><td class="text-center text-emerald-400">✓ Database</td><td class="text-center">Live Results</td></tr>
+                    <tr class="border-b border-slate-700"><td class="py-6 px-6">Baby Genetic Predictor</td><td class="text-center text-emerald-400">✓ Secure AI</td><td class="text-center">With Partner Consent</td></tr>
+                </tbody>
+            </table>
+        </section>
+
+    </div>
+
+    <script>
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>
