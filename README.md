@@ -7,18 +7,13 @@ https://90thetecafe.github.io/GeneAtlas/screenshots.html
 
 ## 📱 Application Screenshots
 
-| Homepage | Requests |
-|:---:|:---:|
-| <img src="images/homepage.jpg" width="100%"> | <img src="images/request.png" width="100%"> |
+| Homepage | Requests | Settings |
+|:---:|:---:|:---:|
+| <img src="images/homepage.jpg" width="250"> | <img src="images/request.png" width="250"> | <img src="images/settings.png" width="250"> |
 
-| Settings | User Information |
-|:---:|:---:|
-| <img src="images/settings.png" width="100%"> | <img src="images/userinfo.png" width="100%"> |
-
-| Family Tree | Features |
-|:---:|:---:|
-| <img src="images/familytree.png" width="100%"> | <img src="images/features.png" width="100%"> |
-
+| User Information | Family Tree | Features |
+|:---:|:---:|:---:|
+| <img src="images/userinfo.png" width="250"> | <img src="images/familytree.png" width="250"> | <img src="images/features.png" width="250"> |
 ### **Executive Summary**
 
 **GeneAtlas: National Genomic Intelligence Platform**
