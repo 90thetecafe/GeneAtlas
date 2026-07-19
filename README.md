@@ -174,6 +174,3 @@ GenomeAI/
 * DNA language models
 * Gene editing simulation
 * Protein structure integration
-
-If this is intended as a science-fiction, game, or world-building project, you can be much more imaginative—for example, adding DNA-based identity systems, instant kinship search, forensic reconstruction, genetic disease simulation, or future medical technologies within a fictional setting.
-
