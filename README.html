@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GeneAtlas - National Genomic Intelligence Platform</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600&display=swap');
+        
+        :root {
+            --primary: 16 185 129;
+        }
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .title-font {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .slide {
+            scroll-snap-align: start;
+            scroll-snap-stop: always;
+        }
+
+        .hero-bg {
+            background: linear-gradient(135deg, #0f172a 0%, #1e2937 100%);
+        }
+    </style>
+</head>
+<body class="bg-zinc-950 text-zinc-200">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-zinc-950/80 backdrop-blur-lg border-b border-zinc-800">
+        <div class="max-w-7xl mx-auto px-8 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-8 h-8 bg-emerald-500 rounded-xl flex items-center justify-center text-white font-bold">G</div>
+                <h1 class="title-font text-2xl font-semibold tracking-tighter">GeneAtlas</h1>
+            </div>
+            <div class="flex items-center gap-8 text-sm">
+                <a href="#overview" onclick="navigateTo('overview')" class="hover:text-emerald-400 transition-colors">Overview</a>
+                <a href="#capabilities" onclick="navigateTo('capabilities')" class="hover:text-emerald-400 transition-colors">Capabilities</a>
+                <a href="#value" onclick="navigateTo('value')" class="hover:text-emerald-400 transition-colors">Value</a>
+                <a href="#features" onclick="navigateTo('features')" class="hover:text-emerald-400 transition-colors">Features</a>
+                <a href="#future" onclick="navigateTo('future')" class="hover:text-emerald-400 transition-colors">Future</a>
+            </div>
+            <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" 
+                    class="px-5 py-2 bg-emerald-600 hover:bg-emerald-500 rounded-full text-sm font-medium transition-all">
+                Back to Top
+            </button>
+        </div>
+    </nav>
+
+    <div class="pt-16">
+        <!-- Slide 1: Title -->
+        <section id="title" class="min-h-screen hero-bg flex items-center justify-center slide">
+            <div class="max-w-5xl mx-auto text-center px-8">
+                <div class="inline-flex items-center gap-2 bg-zinc-900 border border-emerald-500/30 text-emerald-400 text-sm px-6 py-2 rounded-full mb-8">
+                    <i class="fas fa-dna"></i>
+                    NATIONAL GENOMIC INTELLIGENCE
+                </div>
+                <h1 class="title-font text-8xl font-bold tracking-tighter mb-6 leading-none">
+                    GeneAtlas
+                </h1>
+                <p class="text-3xl text-zinc-400 max-w-2xl mx-auto leading-tight">
+                    A secure national platform for synthetic genomic datasets, AI analysis, and privacy-preserving genomic computing
+                </p>
+                <div class="mt-12 flex justify-center gap-6">
+                    <button onclick="navigateTo('overview')" 
+                            class="px-10 py-4 bg-emerald-600 hover:bg-emerald-500 rounded-2xl text-lg font-medium flex items-center gap-3">
+                        Explore the Vision
+                        <i class="fas fa-arrow-down"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 2: Description & Executive Summary -->
+        <section id="overview" class="min-h-screen bg-zinc-900 flex items-center slide">
+            <div class="max-w-6xl mx-auto px-8 py-20">
+                <div class="grid grid-cols-2 gap-16">
+                    <div>
+                        <h2 class="text-5xl title-font font-semibold mb-8">Executive Summary</h2>
+                        <div class="prose prose-invert prose-lg">
+                            <p class="text-zinc-300">
+                                GeneAtlas is a secure, government-controlled national genomic platform designed to store citizens’ full DNA sequences and unlock transformative applications through advanced artificial intelligence.
+                            </p>
+                            <p class="text-emerald-300 font-medium">
+                                The foundational infrastructure for precision medicine, genomic understanding, and informed life decisions in the 21st century.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="space-y-8">
+                        <div class="bg-zinc-800/50 border border-zinc-700 rounded-3xl p-8">
+                            <h3 class="text-emerald-400 font-medium mb-4 flex items-center gap-3">
+                                <i class="fas fa-vision"></i> VISION
+                            </h3>
+                            <p class="text-zinc-400">
+                                A unified, privacy-first DNA registry enabling proactive healthcare, data-driven governance, and scientific leadership.
+                            </p>
+                        </div>
+                        
+                        <div class="bg-zinc-800/50 border border-zinc-700 rounded-3xl p-8">
+                            <h3 class="text-emerald-400 font-medium mb-4">Core Concept</h3>
+                            <p class="text-zinc-400">
+                                A centralized, highly secure <strong>BioVault</strong> where governments register genomic sequences with consent, and individuals control access to their own data.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 3: Core Capabilities -->
+        <section id="capabilities" class="min-h-screen bg-zinc-950 flex items-center slide">
+            <div class="max-w-6xl mx-auto px-8 py-20">
+                <h2 class="text-5xl title-font font-semibold mb-12 text-center">Core Capabilities</h2>
+                <div class="grid grid-cols-3 gap-6">
+                    <div class="bg-zinc-900 border border-zinc-700 rounded-3xl p-8 hover:border-emerald-500/50 transition-all group">
+                        <div class="w-12 h-12 bg-emerald-500/10 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">🧬</div>
+                        <h3 class="font-semibold text-xl mb-2">Phenotypic Reconstruction</h3>
+                        <p class="text-zinc-400">Generate accurate 3D visualizations of face and body from DNA</p>
+                    </div>
+                    <div class="bg-zinc-900 border border-zinc-700 rounded-3xl p-8 hover:border-emerald-500/50 transition-all group">
+                        <div class="w-12 h-12 bg-emerald-500/10 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">👪</div>
+                        <h3 class="font-semibold text-xl mb-2">Relative Discovery</h3>
+                        <p class="text-zinc-400">Automatic detection of biological relatives and interactive family trees</p>
+                    </div>
+                    <div class="bg-zinc-900 border border-zinc-700 rounded-3xl p-8 hover:border-emerald-500/50 transition-all group">
+                        <div class="w-12 h-12 bg-emerald-500/10 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">🛡️</div>
+                        <h3 class="font-semibold text-xl mb-2">Disease Risk Analysis</h3>
+                        <p class="text-zinc-400">Comprehensive genetic illness prediction and carrier status</p>
+                    </div>
+                    <div class="bg-zinc-900 border border-zinc-700 rounded-3xl p-8 hover:border-emerald-500/50 transition-all group">
+                        <div class="w-12 h-12 bg-emerald-500/10 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">💍</div>
+                        <h3 class="font-semibold text-xl mb-2">Pre-Marriage Compatibility</h3>
+                        <p class="text-zinc-400">Predict genetic outcomes and health risks for future children</p>
+                    </div>
+                    <div class="bg-zinc-900 border border-zinc-700 rounded-3xl p-8 hover:border-emerald-500/50 transition-all group">
+                        <div class="w-12 h-12 bg-emerald-500/10 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">🧠</div>
+                        <h3 class="font-semibold text-xl mb-2">Genomic Research Engine</h3>
+                        <p class="text-zinc-400">AI training to decode intelligence, talents, and complex traits</p>
+                    </div>
+                    <div class="bg-zinc-900 border border-zinc-700 rounded-3xl p-8 hover:border-emerald-500/50 transition-all group">
+                        <div class="w-12 h-12 bg-emerald-500/10 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:scale-110 transition-transform">🔬</div>
+                        <h3 class="font-semibold text-xl mb-2">High-Potential Modeling</h3>
+                        <p class="text-zinc-400">Simulate genetic combinations for desirable traits</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 4: Key Capabilities Table -->
+        <section class="min-h-screen bg-zinc-900 py-20 slide">
+            <div class="max-w-6xl mx-auto px-8">
+                <h2 class="text-5xl title-font font-semibold mb-12">Key Capabilities</h2>
+                <div class="bg-zinc-950 border border-zinc-700 rounded-3xl overflow-hidden">
+                    <table class="w-full">
+                        <thead>
+                            <tr class="border-b border-zinc-700">
+                                <th class="text-left py-6 px-10 text-emerald-400 font-medium">Feature</th>
+                                <th class="text-left py-6 px-10 text-emerald-400 font-medium">Benefit</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-zinc-700 text-zinc-300">
+                            <tr><td class="py-6 px-10">Phenotypic Reconstruction</td><td class="py-6 px-10">Generate accurate 3D face and body models from DNA</td></tr>
+                            <tr><td class="py-6 px-10">Relative Discovery Engine</td><td class="py-6 px-10">Automatically identify biological relatives</td></tr>
+                            <tr><td class="py-6 px-10">Dynamic Family Tree</td><td class="py-6 px-10">Real-time interactive pedigree visualization</td></tr>
+                            <tr><td class="py-6 px-10">Disease Risk Oracle</td><td class="py-6 px-10">Advanced prediction of genetic illnesses</td></tr>
+                            <tr><td class="py-6 px-10">AI Training Platform</td><td class="py-6 px-10">Train models on anonymized genomic data</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 5: Strategic Value -->
+        <section id="value" class="min-h-screen bg-zinc-950 py-20 slide">
+            <div class="max-w-6xl mx-auto px-8">
+                <h2 class="text-5xl title-font font-semibold mb-12 text-center">Strategic Value for Governments</h2>
+                <div class="grid grid-cols-2 gap-8">
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="text-emerald-500 text-2xl">🏥</div>
+                            <div>
+                                <h4 class="font-semibold">Healthcare Transformation</h4>
+                                <p class="text-zinc-400">Shift to predictive and preventive medicine</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="text-emerald-500 text-2xl">💰</div>
+                            <div>
+                                <h4 class="font-semibold">Cost Savings</h4>
+                                <p class="text-zinc-400">Billions saved through early intervention</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="text-emerald-500 text-2xl">🔒</div>
+                            <div>
+                                <h4 class="font-semibold">National Security</h4>
+                                <p class="text-zinc-400">Advanced forensic capabilities</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="text-emerald-500 text-2xl">🌍</div>
+                            <div>
+                                <h4 class="font-semibold">Scientific Leadership</h4>
+                                <p class="text-zinc-400">Global leader in genomics and AI</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="text-emerald-500 text-2xl">📈</div>
+                            <div>
+                                <h4 class="font-semibold">Economic Growth</h4>
+                                <p class="text-zinc-400">New industries in biotech and personalized medicine</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="text-emerald-500 text-2xl">🧬</div>
+                            <div>
+                                <h4 class="font-semibold">Human Potential</h4>
+                                <p class="text-zinc-400">Unlock deeper understanding of intelligence and talent</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 6: Projected Impact -->
+        <section class="min-h-screen bg-emerald-950 py-20 slide">
+            <div class="max-w-4xl mx-auto text-center px-8">
+                <h2 class="text-6xl title-font font-semibold mb-8">Projected Impact by 2035</h2>
+                <div class="grid grid-cols-2 gap-10 mt-16">
+                    <div class="bg-zinc-900/50 rounded-3xl p-10 border border-emerald-900">
+                        <div class="text-6xl font-bold text-emerald-400 mb-4">Millions</div>
+                        <p class="text-xl">Lives extended through early detection</p>
+                    </div>
+                    <div class="bg-zinc-900/50 rounded-3xl p-10 border border-emerald-900">
+                        <div class="text-6xl font-bold text-emerald-400 mb-4">Dramatic</div>
+                        <p class="text-xl">Reduction in healthcare costs</p>
+                    </div>
+                </div>
+                <p class="mt-16 text-2xl text-emerald-300">Position your nation as a global leader in genomic intelligence.</p>
+            </div>
+        </section>
+
+        <!-- Slide 7: Features -->
+        <section id="features" class="min-h-screen bg-zinc-900 py-20 slide">
+            <div class="max-w-6xl mx-auto px-8">
+                <h2 class="text-5xl title-font font-semibold mb-16 text-center">Powerful Features</h2>
+                
+                <div class="grid grid-cols-3 gap-8">
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="font-semibold text-emerald-400 mb-4 flex items-center gap-2"><i class="fas fa-brain"></i> AI</h3>
+                            <ul class="space-y-2 text-zinc-400">
+                                <li>• Disease risk prediction</li>
+                                <li>• Population genetics analysis</li>
+                                <li>• DNA language models</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-emerald-400 mb-4 flex items-center gap-2"><i class="fas fa-search"></i> DNA Search</h3>
+                            <ul class="space-y-2 text-zinc-400">
+                                <li>• Relative matching</li>
+                                <li>• Ancestry clustering</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="font-semibold text-emerald-400 mb-4 flex items-center gap-2"><i class="fas fa-tree"></i> Family Tree</h3>
+                            <ul class="space-y-2 text-zinc-400">
+                                <li>• Automatic pedigree generation</li>
+                                <li>• Relationship detection</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-emerald-400 mb-4 flex items-center gap-2"><i class="fas fa-heartbeat"></i> Health Research</h3>
+                            <ul class="space-y-2 text-zinc-400">
+                                <li>• Polygenic risk scores</li>
+                                <li>• Drug response prediction</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="space-y-8">
+                        <div>
+                            <h3 class="font-semibold text-emerald-400 mb-4 flex items-center gap-2"><i class="fas fa-chart-bar"></i> Visualization</h3>
+                            <ul class="space-y-2 text-zinc-400">
+                                <li>• Genome browser</li>
+                                <li>• Family tree visualization</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold text-emerald-400 mb-4 flex items-center gap-2"><i class="fas fa-lock"></i> Privacy</h3>
+                            <ul class="space-y-2 text-zinc-400">
+                                <li>• Differential privacy</li>
+                                <li>• Federated learning</li>
+                                <li>• End-to-end encryption</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Slide 8: Implementation & Call to Action -->
+        <section class="min-h-screen hero-bg flex items-center slide">
+            <div class="max-w-4xl mx-auto text-center px-8">
+                <h2 class="text-5xl title-font font-semibold mb-8">Implementation Approach</h2>
+                <div class="inline-flex flex-col items-center gap-8 bg-zinc-900/70 backdrop-blur border border-zinc-700 rounded-3xl p-12">
+                    <div class="flex gap-12 text-left">
+                        <div>
+                            <div class="text-emerald-400 font-medium">Phase 1</div>
+                            <div class="text-zinc-400">Secure BioVault + Basic Apps</div>
+                        </div>
+                        <div>
+                            <div class="text-emerald-400 font-medium">Phase 2</div>
+                            <div class="text-zinc-400">Advanced AI &amp; Phenotype Reconstruction</div>
+                        </div>
+                        <div>
+                            <div class="text-emerald-400 font-medium">Phase 3</div>
+                            <div class="text-zinc-400">Nationwide Rollout</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-20">
+                    <h2 class="text-6xl title-font font-bold tracking-tighter mb-6">Ready to build the future?</h2>
+                    <p class="text-2xl text-zinc-400 mb-10">GeneAtlas — The National Genome Operating System</p>
+                    <button onclick="alert('Thank you for your interest in GeneAtlas. Contact us to discuss partnership opportunities.')" 
+                            class="px-16 py-6 bg-white text-zinc-900 rounded-3xl text-xl font-semibold hover:scale-105 transition-transform">
+                        Partner With Us
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Slide: Future Research -->
+        <section id="future" class="min-h-screen bg-zinc-900 flex items-center slide">
+            <div class="max-w-6xl mx-auto px-8 py-20">
+                <h2 class="text-5xl title-font font-semibold mb-12">Future Research Directions</h2>
+                <div class="grid grid-cols-2 gap-6 text-zinc-300">
+                    <div class="bg-zinc-800 rounded-3xl p-8">AI-generated genomic simulations</div>
+                    <div class="bg-zinc-800 rounded-3xl p-8">Synthetic genome generation</div>
+                    <div class="bg-zinc-800 rounded-3xl p-8">Personalized medicine research</div>
+                    <div class="bg-zinc-800 rounded-3xl p-8">DNA language models &amp; gene editing simulation</div>
+                    <div class="bg-zinc-800 rounded-3xl p-8">Cancer mutation analysis</div>
+                    <div class="bg-zinc-800 rounded-3xl p-8">Protein structure integration</div>
+                </div>
+                <div class="text-center mt-20 text-zinc-500 text-sm">
+                    Project Structure available in the full documentation
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Progress indicator -->
+    <div class="fixed bottom-8 right-8 bg-zinc-900 border border-zinc-700 rounded-full px-4 py-2 text-xs font-mono text-emerald-400 hidden md:flex items-center gap-2">
+        <span id="progress">01</span>
+        <span class="w-24 h-px bg-zinc-700"></span>
+        <span class="text-zinc-500">08</span>
+    </div>
+
+    <script>
+        // Tailwind script already loaded via CDN
+        
+        function navigateTo(section) {
+            const el = document.getElementById(section);
+            if (el) {
+                el.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        // Progress indicator
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const progressEl = document.getElementById('progress');
+            
+            let current = 1;
+            sections.forEach((section, index) => {
+                const rect = section.getBoundingClientRect();
+                if (rect.top <= window.innerHeight / 2) {
+                    current = index + 1;
+                }
+            });
+            progressEl.textContent = String(current).padStart(2, '0');
+        });
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowDown' || e.key === 'ArrowRight') {
+                window.scrollBy({ top: window.innerHeight * 0.9, behavior: 'smooth' });
+            }
+            if (e.key === 'ArrowUp' || e.key === 'ArrowLeft') {
+                window.scrollBy({ top: -window.innerHeight * 0.9, behavior: 'smooth' });
+            }
+        });
+
+        // Initialize
+        console.log('%cGeneAtlas Presentation Loaded Successfully', 'color:#10b981; font-size:14px; font-family:monospace');
+    </script>
+</body>
+</html>
